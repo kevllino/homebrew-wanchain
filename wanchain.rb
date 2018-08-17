@@ -21,7 +21,7 @@ class Wanchain < Formula
   depends_on 'go' => :build
 
   def install
-    ENV["GOROOT"] = "#{HOMEBREW_PREFIX}/opt/go/libexec"
+    ENV["GOROOT"] = "#{HOMEBREW_PREFIX}/opt/go@1.10/libexec"
     system "go", "env" # Debug env
     system "make", "all"
     bin.install 'build/bin/gwan'
