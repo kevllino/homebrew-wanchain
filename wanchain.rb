@@ -17,7 +17,7 @@ class Wanchain < Formula
 
   depends_on :xcode => :build
 
-  # depends_on 'go' => :build
+  depends_on 'go' => :build
 
   def install
     ENV["GOROOT"] = "#{HOMEBREW_PREFIX}/opt/go@1.10/libexec"
