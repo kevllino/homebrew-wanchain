@@ -20,7 +20,10 @@ class Wanchain < Formula
     ENV["GOROOT"] = "#{HOMEBREW_PREFIX}/opt/go@1.10/libexec"
     system "go", "env" # Debug env
     system "make", "all"
+    bin.install 'build/bin/evm'
     bin.install 'build/bin/gwan'
+    bin.install 'build/bin/rlpdump'
+    bin.install 'build/bin/puppeth'
   end
 
   test do
