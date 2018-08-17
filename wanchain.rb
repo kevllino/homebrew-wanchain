@@ -6,7 +6,7 @@ class Wanchain < Formula
   homepage "https://github.com/kevllino/go-wanchain"
   url "https://github.com/wanchain/go-wanchain/archive/v1.0.4.tar.gz"
   version "1.0.4"
-  sha256 "d3d61fc0509ab5db6ec0e1387048d249b8762489352733b636964ea71a43460c"
+  sha256 "d86806163114698335c33db25a4c09bdf2c8ee00f7cd0d79e1cff0c004c0f814"
 
   devel do
     url 'https://github.com/kevllino/go-wanchain.git', :branch => 'master'
